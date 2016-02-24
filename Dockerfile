@@ -29,7 +29,7 @@ RUN git clone https://github.com/happyfish100/libfastcommon.git ${NGINX_PATH}/ng
  && tar zxvf ${NGINX_PATH}/download/pcre-${PCRE_VERSION}.tar.gz -C ${NGINX_PATH}/download \
  && tar zxvf ${NGINX_PATH}/download/zlib-${ZLIB_VERSION}.tar.gz -C ${NGINX_PATH}/download
 
-WORKDIR ${NGINX_PATH}/nginx-${NGINX_VERSION}
+WORKDIR ${NGINX_PATH}/nginx/nginx-${NGINX_VERSION}
 
 RUN ./configure --with-pcre=${NGINX_PATH}/download/pcre-${PCRE_VERSION} \
                 --with-zlib=${NGINX_PATH}/download/zlib-${ZLIB_VERSION} \
