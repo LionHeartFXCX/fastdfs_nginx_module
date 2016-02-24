@@ -19,7 +19,7 @@ RUN mkdir -p ${NGINX_PATH}/nginx \
  && mkdir -p ${NGINX_PATH}/download \
  && mkdir -p ${NGINX_PATH}/nginx_module
 
-RUN git clone https://github.com/happyfish100/libfastcommon.git ${NGINX_PATH}/nginx_module \
+RUN git clone https://github.com/happyfish100/fastdfs-nginx-module.git ${NGINX_PATH}/nginx_module \
  && wget "http://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz" -P ${NGINX_PATH}/nginx \
  && wget "http://www.openssl.org/source/openssl-${OPENSSL_VERSION}.tar.gz" -P ${NGINX_PATH}/download \
  && wget "ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-${PCRE_VERSION}.tar.gz" -P ${NGINX_PATH}/download \
