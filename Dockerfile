@@ -6,7 +6,7 @@ ENV NGINX_PATH=/nginx \
     NGINX_VERSION=1.8.1 \
     PCRE_VERSION=8.37 \
     ZLIB_VERSION=1.2.8 \
-    OPENSSL_VERSION=1.0.2f \
+    OPENSSL_VERSION=1.0.2f 
 
 RUN apt-get update && apt-get install -y \
     build-essential \
